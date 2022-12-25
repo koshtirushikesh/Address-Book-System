@@ -72,12 +72,12 @@ namespace AddressBook
         {
             Console.WriteLine("enter the first name of contact to delete: ");
             string Find = Console.ReadLine();
-
+            int j = 0;
             for (int i = 0; i < numOfContacts; i++)
             {
                 if (contactsArrayList[i].First_Name == Find)
                 {
-                    int j = i;
+                    j = i;
                 }
             }
             contactsArrayList.Remove(contactsArrayList[j]);
