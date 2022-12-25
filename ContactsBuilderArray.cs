@@ -28,12 +28,19 @@ namespace AddressBook
 
         public void DisplayContacts()
         {
-            for (int i = 0; i < numOfContacts; i++)
+            for (int i = 0; i < contactsArrayList.Count ; i++)
             {
                 Console.WriteLine(contactsArrayList[i].First_Name);
+                Console.WriteLine(contactsArrayList[i].Last_Name);
+                Console.WriteLine(contactsArrayList[i].Address);
+                Console.WriteLine(contactsArrayList[i].City);
+                Console.WriteLine(contactsArrayList[i].State);
+                Console.WriteLine(contactsArrayList[i].Zip);
+                Console.WriteLine(contactsArrayList[i].Phone_Number);
+                Console.WriteLine(contactsArrayList[i].E_mail_Id);
+                Console.WriteLine("-------------------------------------");
             }
         }
-
 
         public void EditTheContact()
         {
@@ -59,6 +66,21 @@ namespace AddressBook
             Console.WriteLine(contactsArrayList[j].Address);
             Console.WriteLine(contactsArrayList[j].Phone_Number);
             Console.WriteLine(contactsArrayList[j].E_mail_Id);
+        }
+
+        public void DeleteTheContct()
+        {
+            Console.WriteLine("enter the first name of contact to delete: ");
+            string Find = Console.ReadLine();
+
+            for (int i = 0; i < numOfContacts; i++)
+            {
+                if (contactsArrayList[i].First_Name == Find)
+                {
+                    int j = i;
+                }
+            }
+            contactsArrayList.Remove(contactsArrayList[j]);
         }
 
     }

@@ -18,7 +18,13 @@ namespace AddressBook
 
             contactsBuilderArray.DisplayContacts();
 
-            contactsBuilderArray.EditTheContact();
+            // contactsBuilderArray.EditTheContact();
+
+            contactsBuilderArray.DeleteTheContct();
+
+            Console.WriteLine("=============================");
+
+            contactsBuilderArray.DisplayContacts();
 
         }
     }
