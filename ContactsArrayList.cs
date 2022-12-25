@@ -17,5 +17,16 @@ namespace AddressBook
         public int Phone_Number;
         public string E_mail_Id;
 
+        public ContactsArrayList(string First_Name, string Last_Name, string Address, string City,string State, int Zip, int Phone_Number, string E_mail_Id)
+        {
+            this.First_Name = First_Name;
+            this.Last_Name = Last_Name;
+            this.Address = Address;
+            this.City = City;
+            this.State = State;
+            this.Zip = Zip;
+            this.Phone_Number = Phone_Number;
+            this.E_mail_Id = E_mail_Id;
+        }
     }
 }
