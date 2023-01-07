@@ -13,20 +13,22 @@ namespace AddressBook
             Console.WriteLine("Address Book System");
 
             ContactsBuilderArray contactsBuilderArray = new ContactsBuilderArray();
+            
             contactsBuilderArray.AddContact("rutik", "koshti", "3/5 jay", "mumbai", "maharastra", 400078, 8898338, "koshti.432@gmail.com");
             contactsBuilderArray.AddContact("rushi", "koshti", "3/5 jay", "mumbai", "maharastra", 400078, 7021734, "koshti.123@gmail.com");
             contactsBuilderArray.AddContact("shubham", "kale", "3/5 jay", "pune", "maharastra", 400078, 7021734, "abd@gmail.com");
-            contactsBuilderArray.DisplayContacts();
 
+            contactsBuilderArray.DisplayContacts();
+            contactsBuilderArray.SearchPersonInCity("mumbai");
 
             // contactsBuilderArray.EditTheContact();
 
-            contactsBuilderArray.DeleteTheContct();
+            // contactsBuilderArray.DeleteTheContct();
 
-            Console.WriteLine("=============================");
+            //Console.WriteLine("=============================");
 
-            contactsBuilderArray.DisplayContacts();
-
+            //contactsBuilderArray.DisplayContacts();
+            
         }
     }
 }

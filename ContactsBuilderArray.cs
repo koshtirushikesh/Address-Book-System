@@ -83,5 +83,10 @@ namespace AddressBook
             contactsArrayList.Remove(contactsArrayList[j]);
         }
 
+        public void SearchPersonInCity(String CITY)
+        {
+            foreach(Contacts contacts in contactsArrayList.FindAll(e=>e.City== CITY))
+            Console.WriteLine(contacts.First_Name+ " "+contacts.Last_Name);
+        }
     }
 }
