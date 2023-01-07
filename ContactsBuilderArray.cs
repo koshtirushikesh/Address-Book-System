@@ -94,5 +94,14 @@ namespace AddressBook
             foreach (Contacts contacts in contactsArrayList.FindAll(e => e.State == State))
                 Console.WriteLine(contacts.First_Name + " " + contacts.Last_Name);
         }
+
+        public void NumberOfContact(string CITY,string STATE)
+        {
+            int countOfcity = contactsArrayList.Count(e=>e.City == CITY);
+            Console.WriteLine("number of contact persons in city: " + countOfcity);
+
+            int countOfState = contactsArrayList.Count(e => e.State == STATE);
+            Console.WriteLine("number of contact persons in State: " + countOfState);
+        }
     }
 }

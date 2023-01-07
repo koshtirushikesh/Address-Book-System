@@ -20,7 +20,8 @@ namespace AddressBook
 
             //contactsBuilderArray.DisplayContacts();
             //contactsBuilderArray.SearchPersonInCity("mumbai");
-            contactsBuilderArray.PersonsInState("maharastra");
+            //contactsBuilderArray.PersonsInState("maharastra");
+            contactsBuilderArray.NumberOfContact("mumbai", "maharastra");
 
             // contactsBuilderArray.EditTheContact();
 
@@ -29,7 +30,7 @@ namespace AddressBook
             //Console.WriteLine("=============================");
 
             //contactsBuilderArray.DisplayContacts();
-            
+
         }
     }
 }
