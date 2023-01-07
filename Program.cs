@@ -18,8 +18,9 @@ namespace AddressBook
             contactsBuilderArray.AddContact("rushi", "koshti", "3/5 jay", "mumbai", "maharastra", 400078, 7021734, "koshti.123@gmail.com");
             contactsBuilderArray.AddContact("shubham", "kale", "3/5 jay", "pune", "maharastra", 400078, 7021734, "abd@gmail.com");
 
-            contactsBuilderArray.DisplayContacts();
-            contactsBuilderArray.SearchPersonInCity("mumbai");
+            //contactsBuilderArray.DisplayContacts();
+            //contactsBuilderArray.SearchPersonInCity("mumbai");
+            contactsBuilderArray.PersonsInState("maharastra");
 
             // contactsBuilderArray.EditTheContact();
 

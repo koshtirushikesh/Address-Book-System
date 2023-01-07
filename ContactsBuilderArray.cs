@@ -88,5 +88,11 @@ namespace AddressBook
             foreach(Contacts contacts in contactsArrayList.FindAll(e=>e.City== CITY))
             Console.WriteLine(contacts.First_Name+ " "+contacts.Last_Name);
         }
+
+        public void PersonsInState(string State)
+        {
+            foreach (Contacts contacts in contactsArrayList.FindAll(e => e.State == State))
+                Console.WriteLine(contacts.First_Name + " " + contacts.Last_Name);
+        }
     }
 }
