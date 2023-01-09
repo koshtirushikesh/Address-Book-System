@@ -21,7 +21,13 @@ namespace AddressBook
             //contactsBuilderArray.DisplayContacts();
             //contactsBuilderArray.SearchPersonInCity("mumbai");
             //contactsBuilderArray.PersonsInState("maharastra");
-            contactsBuilderArray.NumberOfContact("mumbai", "maharastra");
+            //contactsBuilderArray.NumberOfContact("mumbai", "maharastra");
+
+            string AddressBookTextFile = "C:\\Users\\rushi\\source\\repos\\AddressBook\\AddressBookTextFile.txt";
+
+            //contactsBuilderArray.WriteToStreamWriter(AddressBookTextFile);
+            contactsBuilderArray.ReadfromStreamReader(AddressBookTextFile);
+           
 
             // contactsBuilderArray.EditTheContact();
 

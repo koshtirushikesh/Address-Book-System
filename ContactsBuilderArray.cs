@@ -103,5 +103,43 @@ namespace AddressBook
             int countOfState = contactsArrayList.Count(e => e.State == STATE);
             Console.WriteLine("number of contact persons in State: " + countOfState);
         }
+
+        public void ReadfromStreamReader(string path)
+        {
+            using (StreamReader sr = File.OpenText(path))
+            {
+                string s = "";
+                while ((s = sr.ReadLine()) != null)
+                {
+                    Console.WriteLine(s);
+                }
+                sr.Close();
+            }
+        }
+
+        public void WriteToStreamWriter(string path)
+        {
+            using (StreamWriter sr = File.AppendText(path))
+            {
+                for (int i = 0; i < contactsArrayList.Count; i++)
+                {
+                    sr.WriteLine(contactsArrayList[i].First_Name);
+                    sr.WriteLine(contactsArrayList[i].Last_Name);
+                    sr.WriteLine(contactsArrayList[i].Address);
+                    sr.WriteLine(contactsArrayList[i].City);
+                    sr.WriteLine(contactsArrayList[i].State);
+                    sr.WriteLine(contactsArrayList[i].Zip);
+                    sr.WriteLine(contactsArrayList[i].Phone_Number);
+                    sr.WriteLine(contactsArrayList[i].E_mail_Id);
+                    sr.WriteLine("-------------------------------------");
+                }
+
+                sr.Close();
+
+                Console.WriteLine(File.ReadAllText(path));
+            }
+        }
+
+
     }
 }
